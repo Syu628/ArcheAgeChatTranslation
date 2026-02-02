@@ -11,8 +11,8 @@ using System.Threading.Channels;
 
 public class TranslatorWatcher
 {
-    //static string ADDON_BASE_DIR = @"../\";
-    static string ADDON_BASE_DIR = @"C:\Users\admin\Documents\AAClassic\Addon";
+    static string ADDON_BASE_DIR = @"../\";
+    //static string ADDON_BASE_DIR = @"C:\Users\admin\Documents\AAClassic\Addon";
     static string CHAT_INPUT_FILE = Path.Combine(ADDON_BASE_DIR, @"Japaneseplay\to_be_translated.lua");
     static Regex chatPattern = new Regex(@"chatMsg\s*=\s*""\[\[CHAT\|\|\|\|(.*?)\|\|\|\|(.*?)\|\|\|\|(.*?)\]\]""", RegexOptions.Singleline);
     static DateTime lastChatTrigger = DateTime.MinValue;
